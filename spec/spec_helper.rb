@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
-require "pry"
-require "pry-byebug"
 require "detector"
 
 Dir[File.join(File.dirname(__FILE__), "support/shared_contexts/**/*.rb")].each do |file|

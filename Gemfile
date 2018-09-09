@@ -29,7 +29,7 @@ group :test do
 end
 
 group :development do
-  gem "pry", "~> 0.10", require: nil
-  gem "pry-byebug", "~> 3.5", require: nil
-  gem "spirit_hands", require: nil
+  gem "pry", "~> 0.10"
+  gem "pry-byebug", "~> 3.5"
+  gem "spirit_hands"
 end
