@@ -20,6 +20,7 @@ group :test do
   gem "metric_fu", github: "steakknife/metric_fu", require: nil
   gem "reek", "~> 4.4", require: nil # x
   gem "rspec", "~> 3.8", require: nil # x
+  gem "rspec_junit_formatter", "~> 0.4", require: nil
   gem "rubocop", "~> 0.58", require: nil # x
   gem "ruby-beautify2", "~> 0.98", require: nil
   gem "rubycritic", "~> 3.5", require: nil

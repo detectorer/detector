@@ -38,7 +38,7 @@ jobs:
                             --out /tmp/test-results/rspec.xml \
                             --format progress \
                             $TEST_FILES
-            bundle exec rake
+            bundle exec rake code_quality
 
       # collect reports
       - store_test_results:
