@@ -19,13 +19,27 @@ group :test do
   gem "git-cop", "~> 2.2", require: nil # x
   gem "metric_fu", github: "steakknife/metric_fu", require: nil
   gem "reek", "~> 4.4", require: nil # x
-  gem "rspec", "~> 3.8", require: nil # x
+  gem "rspec", "~> 3.8.0", require: nil # x
   gem "rspec_junit_formatter", "~> 0.4", require: nil
   gem "rubocop", "~> 0.58", require: nil # x
   gem "ruby-beautify2", "~> 0.98", require: nil
-  gem "rubycritic", "~> 3.5", require: nil
+  gem "should_not", "~> 1.1.0", require: nil
   gem "simplecov", "~> 0.16.1", require: nil
+  gem "yaml-lint", "~> 0.0.10", require: nil # x
   gem "yard", "~> 0.9", require: nil
+  # rails_best_practices
+  # codeclimate
+  # travis
+  # cane
+  # code_metrics
+  # coderay
+  # churn
+  # roodi
+  # circleci
+  # codeclimate
+  # sonarqube
+  # flog
+  # flay
 end
 
 group :development do

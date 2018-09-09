@@ -1,6 +1,7 @@
 dist: trusty
 sudo: false
 language: ruby
+cache: bundler
 install:
-  - bundle check || bundle install --jobs=3 --deployment --without development --binstubs
+  - bundle check || bundle install --jobs=4 --retry=3 --deployment --without development
   - gem install rails

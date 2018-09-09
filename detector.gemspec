@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-$LOAD_PATH.append File.expand_path("lib", __dir__)
+lib_dir = File.expand_path("lib", __dir__)
+$LOAD_PATH.unshift lib_dir unless $LOAD_PATH.include? lib_dir
 require "detector/identity"
 
 Gem::Specification.new do |spec|

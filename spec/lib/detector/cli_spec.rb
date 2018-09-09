@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "spec_helper"
-
 RSpec.describe Detector::CLI do
   let(:options) { [] }
   let(:command_line) { Array(command).concat options }
