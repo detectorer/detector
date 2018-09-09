@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/project
+    docker:
+      - image: circleci/ruby:2.5.1
+        environment:
+          BUNDLE_JOBS: 3
+          BUNDLE_RETRY: 3
+          BUNDLE_PATH: vendor/bundle
+          EDITOR: vim
+          RAILS_ENV: test
+    steps:
+      - checkout
+
+      - run:
+          name: Bundler Install
+          command: |
+            gem update --system
+            bundle check || bundle install
+            gem install rails
+
+      - run:
+          name: Rake Run
+          command: bundle exec rake
+
