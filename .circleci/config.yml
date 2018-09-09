@@ -17,8 +17,7 @@ jobs:
           name: Bundler Install
           command: |
             gem update --system
-            bundle check || bundle install
-            gem install rails
+            bundle check || bundle install --without development --binstubs
 
       - run:
           name: Rake Run

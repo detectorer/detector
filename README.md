@@ -43,7 +43,7 @@ To install, run:
 
 To test, run:
 
-    bundle exec rake
+    rake
 
 ## Versioning
 

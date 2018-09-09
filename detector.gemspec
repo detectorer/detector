@@ -9,14 +9,14 @@ Gem::Specification.new do |spec|
   spec.platform = Gem::Platform::RUBY
   spec.authors = ["Barry Allard"]
   spec.email = ["barry.allard@gmail.com"]
-  spec.homepage = ""
+  spec.homepage = "https://github.com/detector/detector"
   spec.summary = ""
   spec.license = "MIT"
 
   spec.metadata = {
-    "source_code_uri" => "",
-    "changelog_uri" => "/blob/master/CHANGES.md",
-    "bug_tracker_uri" => "/issues"
+    "source_code_uri" => "https://github.com/detector/detector",
+    "changelog_uri" => "https://github.com/detector/detector/master/tree/CHANGES.md",
+    "bug_tracker_uri" => "https://github.com/detector/detector/issues"
   }
 
   spec.signing_key = Gem.default_key_path
@@ -25,18 +25,10 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = "~> 2.5"
   spec.add_dependency "runcom", "~> 3.1"
   spec.add_dependency "thor", "~> 0.20"
-  spec.add_development_dependency "bundler-audit", "~> 0.6"
-  spec.add_development_dependency "gemsmith", "~> 12.3"
-  spec.add_development_dependency "git-cop", "~> 2.2"
-  spec.add_development_dependency "pry", "~> 0.10"
-  spec.add_development_dependency "pry-byebug", "~> 3.5"
-  spec.add_development_dependency "rake", "~> 12.3"
-  spec.add_development_dependency "reek", "~> 5.0"
-  spec.add_development_dependency "rspec", "~> 3.8"
-  spec.add_development_dependency "rubocop", "~> 0.58"
 
-  spec.files = Dir["lib/**/*"]
+  spec.files = Dir[File.join("lib", "**", "*")]
   spec.extra_rdoc_files = Dir["README*", "LICENSE*"]
-  spec.executables << "detector"
+  spec.bindir = "exe"
+  spec.executables += Dir[File.join("exe", "*")].map { |x| File.basename x }
   spec.require_paths = ["lib"]
 end

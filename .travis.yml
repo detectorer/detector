@@ -1,0 +1,6 @@
+dist: trusty
+sudo: false
+language: ruby
+install:
+  - bundle check || bundle install --jobs=3 --deployment --without development --binstubs
+  - gem install rails

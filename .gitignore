@@ -1,6 +1,8 @@
-*.gem
-.bundle
-.rubocop-http*
-pkg/*
-Gemfile.lock
-tmp
+/*.gem
+/.bundle/
+/.rubocop-http*
+/pkg/*
+/Gemfile.lock
+/tmp/
+/doc/
+/.yardoc/
